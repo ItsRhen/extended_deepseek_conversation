@@ -30,10 +30,10 @@ QUERY_IMAGE_SCHEMA = vol.Schema(
                 "integration": DOMAIN,
             }
         ),
-        vol.Required("model", default="gpt-4-vision-preview"): cv.string,
+        vol.Required("model", default="deepseek-chat"): cv.string,
         vol.Required("prompt"): cv.string,
         vol.Required("images"): vol.All(cv.ensure_list, [{"url": cv.string}]),
-        vol.Optional("max_tokens", default=300): cv.positive_int,
+        vol.Optional("max_tokens", default=1024): cv.positive_int,
     }
 )
 

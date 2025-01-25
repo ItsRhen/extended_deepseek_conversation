@@ -6,7 +6,7 @@ query_image:
         config_entry:
           integration: extended_deepseek_conversation
     model:
-      example: gpt-4-vision-preview
+      example: deepseek-chat
       selector:
         text:
     prompt:
